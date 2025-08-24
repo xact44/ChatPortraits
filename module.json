@@ -1,0 +1,12 @@
+{
+    "id": "ChatPortraits",
+    "title": "Portrait Canvas Overlay",
+    "description": "Slide-in player/GM portraits over the canvas with hotkeys to facilitate immersive speaking.",
+    "version": "0.1.0",
+    "compatibility": {"minimum": "12", "verified": "13"},
+    "authors": [{"name": "Chris Ormsby"}],
+    "url": "",
+    "esmodules": ["scripts/main/js"],
+    "styles": ["styles/module.css"],
+    "minimumCoreVersion": "11"
+}
