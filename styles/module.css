@@ -1,0 +1,40 @@
+.pcanvas-root {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 30000;
+  font-family: var(--font-primary, sans-serif);
+}
+
+.pcanvas-item {
+  position: absolute;
+  width: 320px;
+  pointer-events: auto;
+  user-select: none;
+  opacity: 0;
+  transform: translateX(0);
+  transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.pcanvas-item.left { left: 24px; }
+.pcanvas-item.right { right: 24px; }
+.pcanvas-item.in { opacity: 1; transform: translateX(0); }
+
+.pcanvas-frame {
+  background: rgba(8,8,10,.85);
+  border: 2px solid rgba(255,255,255,.18);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,.35);
+  backdrop-filter: blur(4px);
+}
+
+.pcanvas-img, .pcanvas-video { display: block; width: 100%; height: auto; }
+
+.pcanvas-name {
+  padding: 6px 10px;
+  font-size: 13px; color: #eee;
+  background: rgba(0,0,0,.45);
+  text-align: center;
+  text-shadow: 0 1px 2px black;
+}
